@@ -1,16 +1,26 @@
-const StyleDictionary = require('style-dictionary').extend({
-  source: ['properties/**/*.json'],
+const { registerTransforms } = require('@tokens-studio/sd-transforms');
+const StyleDictionary = require('style-dictionary');
+
+// will register them on StyleDictionary object
+// that is installed as a dependency of this package.
+registerTransforms(StyleDictionary);
+
+const sd = StyleDictionary.extend({
+  source: ['**/*.json'], // <-- make sure to have this match your token files!!!
   platforms: {
-    scss: {
-      transformGroup: 'scss',
-      buildPath: 'build/',
-      files: [{
-        destination: 'variables.scss',
-        format: 'scss/variables'
-      }]
-    }
-    // ...
-  }
+    css: {
+      transformGroup: 'tokens-studio',
+      transforms: ['name/kebab'], // <-- add a token name transform for generating token names, default is camel
+      buildPath: 'build/css/',
+      files: [
+        {
+          destination: 'variables.css',
+          format: 'css/variables',
+        },
+      ],
+    },
+  },
 });
 
-StyleDictionary.buildAllPlatforms();
+sd.cleanAllPlatforms();
+sd.buildAllPlatforms();
