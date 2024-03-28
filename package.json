@@ -3,6 +3,7 @@
     "build": "style-dictionary build --config sd-config.json;"
   },
   "dependencies": {
+    "@tokens-studio/sd-transforms": "^0.15.2",
     "style-dictionary": "^3.9.2"
   }
 }
