@@ -1,10 +1,10 @@
 name: Generate Design Tokens With Style Dictionary
 on:
   workflow_dispatch:
-    inputs:
-      file_key:
-        description: 'The file key of the Figma file to be updated'
-        required: true
+    # inputs:
+    #   file_key:
+    #     description: 'The file key of the Figma file to be updated'
+    #     required: true
 
 
 jobs:
