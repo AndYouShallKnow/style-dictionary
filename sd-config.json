@@ -1,5 +1,5 @@
 {
-  "source": ["https://github.com/AndYouShallKnow/variables-github-action-example/blob/main/tokens/Colors%3A%20Primitive.Value.json"],
+  "source": ["output/**/*.json"],
   "platforms": {
     "scss": {
       "transformGroup": "scss",
