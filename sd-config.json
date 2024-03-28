@@ -1,22 +1,20 @@
 {
   "source": ["output/**/*.json"],
   "platforms": {
-    "scss": {
-      "transformGroup": "scss",
-      "prefix": "sd",
-      "buildPath": "build/scss/",
-      "files": [{
-        "destination": "_variables.scss",
-        "format": "scss/variables"
-      }],
-    },
-    "android": {
-      "transforms": ["attribute/cti", "name/cti/snake", "color/hex", "size/remToSp", "size/remToDp"],
-      "buildPath": "build/android/src/main/res/values/",
-      "files": [{
-        "destination": "style_dictionary_colors.xml",
-        "format": "android/colors"
-      }]
+    "iOS": {
+      "buildPath": "build/ios/",
+      "prefix": "",
+      "transformGroup": "ios-swift",
+      "files": [
+        {
+          "destination": "any.swift",
+          "format": "ios-swift/any.swift"
+        },
+        {
+          "destination": "enum.swift",
+          "format": "ios-swift/enum.swift"
+        }
+      ]
     }
   }
 }
