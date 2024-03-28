@@ -1,5 +1,5 @@
 {
-  "source": ["output/**/*.json"],
+  "source": ["/output/**/*.json"],
   "platforms": {
     "iOS": {
       "buildPath": "build/ios/",
