@@ -3,7 +3,6 @@
   "platforms": {
     "ios": {
       "buildPath": "build/iOS/",
-       "transformGroup": "tokens-studio",
       "prefix": "sd",
       "files": [
         {
