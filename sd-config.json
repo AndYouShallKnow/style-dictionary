@@ -1,18 +1,13 @@
 {
   "source": ["output/**/*.json"],
   "platforms": {
-    "iOS": {
-      "buildPath": "build/ios/",
-      "prefix": "",
-      "transformGroup": "ios-swift",
+    "ios": {
+      "buildPath": "build/iOS/",
+      "prefix": "sd",
       "files": [
         {
           "destination": "any.swift",
           "format": "ios-swift/any.swift"
-        },
-        {
-          "destination": "enum.swift",
-          "format": "ios-swift/enum.swift"
         }
       ]
     }
