@@ -9,7 +9,7 @@ on:
 
 jobs:
   generate_tokens:
-    if: ${{ github.event.label.name == 'Design tokens' }}
+    # if: ${{ github.event.label.name == 'Design tokens' }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
