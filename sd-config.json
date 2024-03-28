@@ -1,16 +1,6 @@
 {
   "source": ["output/**/*.json"],
- "platforms": {
-    "js": {
-      "buildPath": "build/js/",
-      "transformGroup": "tokens-studio",
-      "files": [
-        {
-          "destination": "variables.js",
-          "format": "javascript/es6"
-        }
-      ]
-    },
+  "platforms": {
     "iOS": {
       "buildPath": "build/ios/",
       "prefix": "",
