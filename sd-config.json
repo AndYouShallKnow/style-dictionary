@@ -1,5 +1,5 @@
 {
-  "source": ["output/**/*.json"],
+  "source": ["output/Colors/Primitive.Value.json"],
   "platforms": {
     "ios": {
       "buildPath": "build/iOS/",
