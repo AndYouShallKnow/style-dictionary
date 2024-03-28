@@ -1,5 +1,5 @@
 const StyleDictionary = require('style-dictionary').extend({
-  source: ['properties/**/*.json'],
+  source: ['output/**/*.json'],
   platforms: {
     scss: {
       transformGroup: 'scss',
