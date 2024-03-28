@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "style-dictionary build --config sd-config.json;"
+    "build": "node build.js;"
   },
   "dependencies": {
     "@tokens-studio/sd-transforms": "^0.15.2",
