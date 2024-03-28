@@ -1,6 +1,4 @@
 name: Generate Design Tokens With Style Dictionary
-
-name: StyleDictionary
 on:
   workflow_dispatch:
     inputs:
