@@ -8,19 +8,27 @@ const StyleDictionary = require('style-dictionary');
 
 registerTransforms(StyleDictionary);
 
-// StyleDictionary bit
 const sd = require('style-dictionary').extend({
   source: ['tokens/*.json'],
   platforms: {
     scss: {
-      //transformGroup: 'scss',
-      // This transform group isn't working due to the above init not working
       transformGroup: 'tokens-studio',
       buildPath: 'build/',
       files: [{
         destination: 'variables.scss',
         format: 'scss/variables'
       }]
+    },
+      ios: {
+      buildPath: 'build/iOS/',
+      transformGroup: 'tokens-studio',
+      prefix: sd,
+      files: [
+        {
+          destination: 'any.swift',
+          format: 'ios-swift/any.swift'
+        }
+      ]
     }
     // ...
   }
