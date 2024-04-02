@@ -1,5 +1,5 @@
 
-import { registerTransforms } from "@tokens-studio/sd-transforms";
+// import { registerTransforms } from "@tokens-studio/sd-transforms";
 
 
 const StyleDictionary = require('style-dictionary').extend({
