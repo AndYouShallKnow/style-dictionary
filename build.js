@@ -1,8 +1,8 @@
 // const { registerTransforms } = require('@tokens-studio/sd-transforms');
 // const StyleDictionary = require('style-dictionary');
-import { registerTransforms } from "@tokens-studio/sd-transforms";
 
-import StyleDictionary from "style-dictionary";
+// import { registerTransforms } from "@tokens-studio/sd-transforms";
+// import StyleDictionary from "style-dictionary";
 
 registerTransforms(StyleDictionary);
 
