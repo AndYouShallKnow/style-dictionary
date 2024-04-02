@@ -1,8 +1,13 @@
+// const { registerTransforms } = require('@tokens-studio/sd-transforms');
+// const StyleDictionary = require('style-dictionary');
+import { registerTransforms } from "@tokens-studio/sd-transforms";
 
-// import { registerTransforms } from "@tokens-studio/sd-transforms";
+import StyleDictionary from "style-dictionary";
+
+registerTransforms(StyleDictionary);
 
 
-const StyleDictionary = require('style-dictionary').extend({
+const sd = require('style-dictionary').extend({
   source: ['output/**/*.json'],
   platforms: {
     scss: {
@@ -17,4 +22,6 @@ const StyleDictionary = require('style-dictionary').extend({
   }
 });
 
-StyleDictionary.buildAllPlatforms();
+
+sd.cleanAllPlatforms();
+sd.buildAllPlatforms();
