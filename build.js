@@ -5,7 +5,7 @@
 // const { registerTransforms } = require('@tokens-studio/sd-transforms');
 // const StyleDictionary = require('style-dictionary');
 
-ES6?
+// ES6?
 // import { registerTransforms } from "@tokens-studio/sd-transforms";
 // import StyleDictionary from "style-dictionary";
 
