@@ -1,10 +1,9 @@
 
 //Style Dictionary Transforms for Tokens Studio bit, not working
 
-import { registerTransforms } from "@tokens-studio/sd-transforms";
-import StyleDictionary from "style-dictionary";
+const { registerTransforms } = require('@tokens-studio/sd-transforms');
+const StyleDictionary = require('style-dictionary');
 
-If this line works, the 'tokens-studio' lib will be available to be
 registerTransforms(StyleDictionary);
 
 // StyleDictionary bit
