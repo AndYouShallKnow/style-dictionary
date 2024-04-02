@@ -8,7 +8,7 @@
 
 
 const sd = require('style-dictionary').extend({
-  source: ['output/**/*.json'],
+  source: ['tokens/*.json'],
   platforms: {
     scss: {
       transformGroup: 'scss',
