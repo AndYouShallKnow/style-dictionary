@@ -15,8 +15,8 @@ const sd = require('style-dictionary').extend({
       transformGroup: 'tokens-studio',
       buildPath: 'build/',
       files: [{
-        destination: 'variables.scss',
-        format: 'scss/variables'
+          destination: 'variables.js',
+          format: 'javascript/es6'
       }]
     },
       ios: {
