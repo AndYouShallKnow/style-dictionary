@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "node build.mjs;"
+    "build": "node build.js;"
   },
   "dependencies": {
     "@tokens-studio/sd-transforms": "^0.15.2",
