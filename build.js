@@ -22,7 +22,7 @@ const sd = require('style-dictionary').extend({
       ios: {
       buildPath: 'build/iOS/',
       transformGroup: 'tokens-studio',
-      prefix: sd,
+      prefix: 'sd',
       files: [
         {
           destination: 'any.swift',
