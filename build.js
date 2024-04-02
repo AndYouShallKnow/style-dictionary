@@ -5,19 +5,43 @@ const StyleDictionary = require('style-dictionary');
 // that is installed as a dependency of this package.
 registerTransforms(StyleDictionary);
 
-const StyleDictionary = require('style-dictionary').extend({
+
+const sd = StyleDictionary.extend({
   source: ['output/**/*.json'],
   platforms: {
-    scss: {
+    css: {
       transformGroup: 'tokens-studio',
-      buildPath: 'build/',
-      files: [{
-        destination: 'variables.scss',
-        format: 'scss/variables'
-      }]
-    }
-    // ...
-  }
+      transforms: ['name/kebab'], // <-- add a token name transform for generating token names, default is camel
+      buildPath: 'build/css/',
+      files: [
+        {
+          destination: 'variables.css',
+          format: 'css/variables',
+        },
+      ],
+    },
+  },
 });
 
-StyleDictionary.buildAllPlatforms();
+sd.cleanAllPlatforms();
+sd.buildAllPlatforms();
+
+
+
+
+// const StyleDictionary = require('style-dictionary').extend({
+//   source: ['output/**/*.json'],
+//   platforms: {
+//     scss: {
+//       transformGroup: 'tokens-studio',
+//       buildPath: 'build/',
+//       files: [{
+//         destination: 'variables.scss',
+//         format: 'scss/variables'
+//       }]
+//     }
+//     // ...
+//   }
+// });
+
+// StyleDictionary.buildAllPlatforms();
