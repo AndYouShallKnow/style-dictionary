@@ -1,11 +1,7 @@
 
-//Style Dictionary Transforms for Tokens Studio bit, not working
-
-
+//Style Dictionary Transforms for Tokens Studio bit
 const { registerTransforms } = require('@tokens-studio/sd-transforms');
 const StyleDictionary = require('style-dictionary');
-
-
 registerTransforms(StyleDictionary);
 
 const sd = require('style-dictionary').extend({
@@ -20,7 +16,7 @@ const sd = require('style-dictionary').extend({
       }]
     },
       ios: {
-      buildPath: 'build/iOS/',
+      buildPath: 'build/',
       transformGroup: 'tokens-studio',
       prefix: 'sd',
       files: [
@@ -35,5 +31,5 @@ const sd = require('style-dictionary').extend({
 });
 
 
-sd.cleanAllPlatforms();
+// sd.cleanAllPlatforms();
 sd.buildAllPlatforms();

@@ -1,0 +1,16 @@
+{
+  "black": {
+    "$type": "color",
+    "$value": "#000000",
+    "$description": "",
+    "$extensions": {
+      "com.figma": {
+        "hiddenFromPublishing": false,
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "codeSyntax": {}
+      }
+    }
+  }
+}
