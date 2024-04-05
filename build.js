@@ -5,7 +5,8 @@ const StyleDictionary = require('style-dictionary');
 registerTransforms(StyleDictionary);
 
 const sd = require('style-dictionary').extend({
-  source: ['tokens/*.json'],
+  // source: ['tokens/*.json'],
+  source: ['https://github.com/gerard-figma/variables-github-action-example/blob/main/colors.json'],
   platforms: {
     scss: {
       transformGroup: 'tokens-studio',
