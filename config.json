@@ -1,0 +1,32 @@
+{
+    "source": [
+      "cleantokens/*.json"
+    ],
+    "platforms": {
+      "js": {
+        "buildPath": "build/js/",
+        "transformGroup": "scss",
+        "files": [
+          {
+            "destination": "variables.js",
+            "format": "javascript/es6"
+          }
+        ]
+      },
+      "iOS": {
+        "buildPath": "build/ios/",
+        "prefix": "",
+        "transformGroup": "ios-swift",
+        "files": [
+          {
+            "destination": "any.swift",
+            "format": "ios-swift/any.swift"
+          },
+          {
+            "destination": "enum.swift",
+            "format": "ios-swift/enum.swift"
+          }
+        ]
+      }
+    }
+  }
