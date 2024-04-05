@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    # - name: Install Node Dependencies
-    #   run: npm install style-dictionary
-    - name: Install Token Studio extension (not used, but brings in style-dictionary anyway)
-      run: npm install @tokens-studio/sd-transforms
+    - name: Install Node Dependencies
+      run: npm install style-dictionary
+    # - name: Install Token Studio extension (not used, but brings in style-dictionary anyway)
+    #   run: npm install @tokens-studio/sd-transforms
     - name: Build Style Dictionary
       run: npm run build
     - name: Create Pull Request
